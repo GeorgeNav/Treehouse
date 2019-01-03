@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--width: controls size of viewport
+                device-width: width of device screen in CSS px unit at a scale of 100%
+                initial-scale: first zoom level after loading page (1.0 means 100%) -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey|Josefin+Sans">
+        <link rel="stylesheet" href="css/normalize.css"> <!--Provices consistency so different browsers wont have different default property values-->
+        <link rel="stylesheet" href="css/style.css"> <!--My custom style sheet-->
+    </head>
+    <body>
+        <header class="main-header clearfix">
+            <div class="clearfix">
+                <h1>George Navarro</h1>
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <figure>
+                <img src="images/responsive-layout-profile.png" alt="Profile picture of me">
+                <figcaption>Hi! I am a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</figcaption>
+            </figure>
+        </header>
+
+        <section id="portfolio-wrap">
+            <h1>PORTFOLIO</h1>
+            <div id="portfolio">
+                <article id="item1">
+                    <figure>
+                        <img src="images/portfolio-1.png" alt="Front page of a marketing website">
+                        <h2>Marketing Page</h2>
+                        <figcaption>This project shows the front page of a marketing website meant for a specific business I'm interested in.</figcaption>
+                    </figure>
+                </article>
+
+                <article id="item2">
+                    <figure>
+                        <img src="images/portfolio-2.png" alt="Front page of search page">
+                        <h2>Search Page</h2>
+                        <figcaption>This project searches through a specific database to find information that the user is trying to look up.</figcaption>
+                    </figure>
+                </article>
+
+                <article id="item3">
+                    <figure>
+                        <img src="images/portfolio-3.png" alt="Front page of travel app">
+                        <h2>Travel App</h2>
+                        <figcaption>This project compares travel times based on different transportation methods and tells you the best one.</figcaption>
+                    </figure>
+                </article>
+
+                <article id="item4">
+                    <figure>
+                        <img src="images/portfolio-4.png" alt="Front page of map app">
+                        <h2>Map of Favorite Spots</h2>
+                        <figcaption>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</figcaption>
+                    </figure>
+                </article>
+
+                <article id="item5">
+                    <figure>
+                        <img src="images/portfolio-5.png" alt="Front page of photo gallery app">
+                        <h2>Photo Gallery</h2>
+                        <figcaption>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</figcaption>
+                    </figure>
+                </article>
+
+                <article id="item6">
+                    <figure>
+                        <img src="images/portfolio-6.png" alt="Front page of calculator app">
+                        <h2>Calculator</h2>
+                        <figcaption>Someone can enter in the numbers they want, and press the big blue button to get the result.</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>CONTACT</h1>
+            <p>If your are interested in chatting or want more information about what I have been working on, I would love to hear from you!</p>
+            <p>Phone: <strong>832-518-8781</strong></p>
+            <p>Email: <strong>george.g.navarro@gmail.com</strong></p>
+            <hr style="background-color: lightgrey;">
+        </section>
+        <footer class="main-footer clearfix">
+            <h3 id="name">George Navarro</h3>
+            <h3 id="to-top"><a href="#">BACK TO TOP</a></h3>
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
