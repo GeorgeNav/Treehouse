@@ -112,13 +112,12 @@ h2 {
 }
 #name {
     float: left;
-    margin: 1em;
-
+    margin: 1em 0 1em 1em;
 }
 #to-top a {
     color: inherit;
     float: right;
-    margin: 1em;
+    margin: 1em 1em 1em 0;
     text-decoration: none;
 }
 #to-top a:hover {
@@ -133,6 +132,9 @@ h2 {
     padding: 0 1em;
     max-width: 1024px;
     margin: 0 1em;
+}
+#contact strong {
+    font-size: 0.75em;
 }
 
 #contact hr {
@@ -223,6 +225,10 @@ h2 {
 
     .main-footer h3 {
         float: left;
+    }
+    
+    #contact strong {
+        font-size: 1em;
     }
 }
 
