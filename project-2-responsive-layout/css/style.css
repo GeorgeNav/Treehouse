@@ -42,16 +42,18 @@ figcaption {
     padding: 0 1em 1em;
 }
 
-h2 {
-    font-size: 2em;
-    line-height: 1.5em;
-}
-
 h1 {
     font-size: 2.5em;
     font-family: "Happy Monkey", cursive;
     padding: 1.5em;
     line-height: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    padding: 1em;
     margin: 0;
 }
 
@@ -74,6 +76,15 @@ h1 {
     font-size: 3em;
     padding: 0.5em;
 }
+.main-header figure {
+    margin: 0 1em;
+}
+.main-header img {
+    margin: 0 0 2em 0;
+}
+.main-nav {
+    margin-bottom: 2em;
+}
 .main-nav li {
     background: white;
     margin: 0.5em;
@@ -90,7 +101,7 @@ h1 {
     padding: 5px;
 }
 .main-nav a:visited {
-    color: none;
+    color: inherit;
 }
 
 .main-footer {
@@ -99,33 +110,35 @@ h1 {
     max-width: 1024px;
     margin: 0 auto;
 }
-.main-header figure {
-    margin: 0 1em;
-}
 #name {
     float: left;
-    margin: 0.5em;
+    margin: 1em;
 
 }
 #to-top a {
     color: inherit;
     float: right;
-    margin: 0.5em;
+    margin: 1em;
     text-decoration: none;
 }
 #to-top a:hover {
     text-shadow: 1px 1px 3px rgb(0, 255, 234);
 }
 #to-top a:visited {
-    color: none;
+    color: inherit;
 }
 
 #contact {
     background: rgb(245,245,245);
     padding: 0 1em;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 0 1em;
 }
+
+#contact hr {
+    margin-top: 3em;
+}
+
 .main-footer ul {
     display: none;
 }
@@ -140,7 +153,6 @@ h1 {
 
 /* Media queries */
 @media (min-width: 768px) {
-
     #to-top {
         display: none;
     }
@@ -176,6 +188,9 @@ h1 {
         grid-row: 3;
         grid-column: 2;
     }
+    #contact {
+        margin: 0 auto;
+    }
 
     .main-header {
         min-height: 0;
@@ -185,9 +200,8 @@ h1 {
     }
     .main-header figure img {
         float: right;
-        width: 50%;
         margin: 0 1em 1em 1em;
-        max-width: 402px;
+        max-width: 300px;
     }
     .main-header figure figcaption {
         text-align: left;
@@ -218,9 +232,6 @@ h1 {
     }
     .main-nav {
         float: right;
-    }
-    .main-header figcaption {
-        float: clear;
     }
     .main-header div {
         margin: 0 auto;

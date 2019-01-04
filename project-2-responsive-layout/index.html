@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <title>My Site</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <!--width: controls size of viewport
                 device-width: width of device screen in CSS px unit at a scale of 100%
                 initial-scale: first zoom level after loading page (1.0 means 100%) -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey|Josefin+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Happy+Monkey%7cJosefin+Sans">
         <link rel="stylesheet" href="css/normalize.css"> <!--Provices consistency so different browsers wont have different default property values-->
         <link rel="stylesheet" href="css/style.css"> <!--My custom style sheet-->
     </head>
     <body>
-        <header class="main-header clearfix">
+        <header id="home" class="main-header clearfix">
             <div class="clearfix">
                 <h1>George Navarro</h1>
-                <ul class="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio-wrap">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio-wrap">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
             <figure>
                 <img src="images/responsive-layout-profile.png" alt="Profile picture of me">
@@ -27,7 +30,7 @@
         </header>
 
         <section id="skills">
-            <h1>Skills</h1>
+            <h2>SKILLS</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -39,7 +42,7 @@
         </section>
 
         <section id="portfolio-wrap">
-            <h1>PORTFOLIO</h1>
+            <h2>PORTFOLIO</h2>
             <div id="portfolio">
                 <article id="item1">
                     <figure>
@@ -92,7 +95,7 @@
         </section>
 
         <section id="contact">
-            <h1>CONTACT</h1>
+            <h2>CONTACT</h2>
             <p>If your are interested in chatting or want more information about what I have been working on, I would love to hear from you!</p>
             <p>Phone: <strong>832-518-8781</strong></p>
             <p>Email: <strong>george.g.navarro@gmail.com</strong></p>
@@ -101,12 +104,14 @@
         <footer class="main-footer clearfix">
             <h3 id="name">George Navarro</h3>
             <h3 id="to-top"><a href="#">BACK TO TOP</a></h3>
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio-wrap">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio-wrap">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </footer>
     </body>
 </html>
